@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
 
-from simple_functions import my_sum, factorial, sin
+from simple_functions import my_sum, factorial, sin, say_best_player
 
 
 class TestSimpleFunctions(object):
@@ -35,3 +35,13 @@ class TestSimpleFunctions(object):
         '''Test our sin function'''
         answer = sin(x)
         assert np.isclose(answer, expected)
+
+    @pytest.mark.parametrize('player, expected', [
+        ('Ronaldo', False),
+        ('Messi', True)
+    ])
+    def test_player(self, player, expected):
+        '''Test our player function'''
+        answer = say_best_player(player)
+        assert answer == expected
+
