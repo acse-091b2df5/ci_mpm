@@ -2,8 +2,6 @@ import pytest
 
 from simple_functions import my_sum, factorial
 
-
-
 class TestSimpleFunctions(object):
     '''Class to test our simple functions are working correctly'''
 
@@ -25,3 +23,4 @@ class TestSimpleFunctions(object):
         '''Test our factorial function'''
         answer = factorial(number)
         assert answer == expected
+        

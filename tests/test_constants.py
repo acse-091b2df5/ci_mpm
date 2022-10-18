@@ -1,7 +1,5 @@
 import numpy as np
-import pytest
 from simple_functions import pi
-
 
 class TestPi(object):
     '''Class to test our constants are computed correctly'''
@@ -10,3 +8,4 @@ class TestPi(object):
         '''Test computation of pi'''
         my_pi = pi(2)
         assert np.isclose(my_pi, np.pi, atol=1e-12)
+        
