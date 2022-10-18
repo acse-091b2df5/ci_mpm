@@ -44,4 +44,3 @@ class TestSimpleFunctions(object):
         '''Test our player function'''
         answer = say_best_player(player)
         assert answer == expected
-

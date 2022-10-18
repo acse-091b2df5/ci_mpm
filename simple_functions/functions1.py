@@ -28,4 +28,3 @@ def sin(x):
 def say_best_player(player):
     output = player == 'Messi' or player == 'messi'
     return output
-
